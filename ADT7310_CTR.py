@@ -23,6 +23,9 @@ class ADT7310_CTR:
 
         # set frequency
         self.spi.max_speed_hz = self.max_hz
+        
+        # Set mode
+        self.spi.mode = 3
 
         self.enable_16bit_mode()
         self.enable_c_read_mode()
